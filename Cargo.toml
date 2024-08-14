@@ -1,8 +1,8 @@
 [workspace.package]
 license = "MIT-0"
-authors = ["Parity Technologies <admin@parity.io>"]
-homepage = "https://paritytech.github.io/polkadot-sdk/"
-repository = "https://github.com/paritytech/polkadot-sdk-solochain-template.git"
+authors = ["Wassim Mansouri <wassim@wassimans.com>"]
+homepage = "https://speem.app"
+repository = "https://github.com/SPEEM-App/speed-node"
 edition = "2021"
 
 [workspace]
@@ -14,7 +14,7 @@ members = [
 resolver = "2"
 
 [workspace.dependencies]
-solochain-template-runtime = { path = "./runtime", default-features = false }
+speem-runtime = { path = "./runtime", default-features = false }
 pallet-template = { path = "./pallets/template", default-features = false }
 clap = { version = "4.5.3" }
 frame-benchmarking-cli = { version = "42.0.0", default-features = false }

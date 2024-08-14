@@ -1,8 +1,8 @@
 [package]
-name = "solochain-template-runtime"
-description = "A solochain runtime template built with Substrate, part of Polkadot Sdk. (polkadot v1.15.0)"
+name = "speem-runtime"
+description = "SPEEM node implementation based on Substrate's solochain node template, part of Polkadot Sdk."
 version = "0.1.0"
-license = "Unlicense"
+license = "MIT-0"
 authors.workspace = true
 homepage.workspace = true
 repository.workspace = true
@@ -13,7 +13,7 @@ publish = false
 targets = ["x86_64-unknown-linux-gnu"]
 
 [dependencies]
-codec = { features = [
+codec = { package = "parity-scale-codec", version = "3.6.12", features = [
 	"derive",
 ], workspace = true }
 scale-info = { features = [
